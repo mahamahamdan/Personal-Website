@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal website of Hamdan Mahama" />
+  <meta name="author" content="Hamdan Mahama" />
+  <meta name="keywords" content="Hamdan Mahama, web developer, software engineer, Ghana, portfolio, HTML, CSS, JavaScript" />
+  <title>Hamdan Mahama | Web Developer</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #2c3e50, #3498db);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #f1c40f;
+    }
+
+    .container {
+      width: 85%;
+      margin: 0 auto;
+      padding: 40px 0;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    img.profile {
+      border-radius: 50%;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .projects ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 0;
+    }
+
+    .projects li {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      list-style: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .projects li:hover {
+      transform: translateY(-5px);
+    }
+
+    .projects a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .projects a:hover {
+      text-decoration: underline;
+    }
+
+    .contact a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .social-links {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      color: #2c3e50;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .social-links a:hover {
+      color: #f39c12;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #2c3e50;
+      color: white;
+      padding: 15px 0;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      nav ul li {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .container {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hamdan Mahama</h1>
+    <p>Web Developer & Aspiring Software Engineer</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="container">
+      <h2>About Me</h2>
+      <img src="https://media.licdn.com/dms/image/v2/D4D03AQErpb13ZIYAIQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1725461654434?e=1749686400&v=beta&t=Exck5lcU2HHRaYgXpMC-sHiUCMmpMPnaTcaHfbgUycw" 
+           alt="Profile photo of Hamdan Mahama" width="200" height="200" class="profile" />
+      <p>Hello! I'm Hamdan, a passionate web developer and software engineer. I love coding, building websites, and learning new technologies. I specialize in creating functional and aesthetically pleasing websites with a strong focus on user experience and performance.</p>
+      <p>Currently pursuing a BSc in Computer Science at Simon Diedong Dombo University of Business and Integrated Development Studies, I bring a mix of creativity and technical skill, with experience in HTML, CSS, JavaScript, and Python.</p>
+      <p>My goal is to leverage technology to solve real-world problems and make meaningful impacts through innovative digital solutions.</p>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>Portfolio Website</strong><br />
+          A personal portfolio built with HTML, CSS, and JavaScript.<br />
+          <a href="https://github.com/hamdanmahama/portfolio" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+        </li>
+        <li>
+          <strong>To-Do List App</strong><br />
+          A React-based task tracker with local storage.<br />
+          <a href="https://github.com/hamdanmahama/todo-app" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+        </li>
+        <li>
+          <strong>Pharmacy Website</strong><br />
+          A responsive pharmacy website built with HTML, CSS, and JavaScript to showcase services and enable user interaction across devices.<br />
+          <a href="https://github.com/mahamahamdan/Sung-Royal-Pharmacy.git" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:mahamahamdan@gmail.com">mahamahamdan@gmail.com</a></p>
+      <p>Connect with me on social media:</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/hamdan-mahama-b282b8244" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/hamdanmahama" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://instagram.com/mahama1_hamdan" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Hamdan Mahama - All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
